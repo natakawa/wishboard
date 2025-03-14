@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.flash {
+    padding: 10px;
+    margin: 10px 0;
+}
+.flash.success {
+    background-color: #d4edda;
+}
+.flash.danger {
+    background-color: #f8d7da;
+}
+.flash.info {
+    background-color: #d1ecf1;
+}

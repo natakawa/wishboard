@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Мои списки{% endblock %}
+
+{% block content %}
+<h2>Мои списки желаний</h2>
+<a href="{{ url_for('wishlist.create_wishlist') }}">Создать новый список</a>
+<ul>
+    {% for wishlist in wishlists %}
+    <li>
+        <a href="{{ url_for('wishlist.view_wishlist', wishlist_id=wishlist.id) }}">{{ wishlist.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
